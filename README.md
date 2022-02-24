@@ -154,7 +154,7 @@ _htdocs/mon-application/ma-page.php_
 
 Sera accessible via: http://localhost/mon-application/ma-page.php
 
-A noter que si vous nommez votre fichier ".php": "index.php", la page s'ouvrira dès que vouse ntrerez l'url dans le naviagateur. Sinon il sera possible de naviguer dans l'arborescence de votre site / application.
+A noter que si vous nommez votre fichier ".php": "index.php", la page s'ouvrira dès que vouse entrerez l'url dans le naviagateur. Sinon il sera possible de naviguer dans l'arborescence de votre site / application.
 
 ### Problème de cache ou de refresh?
 
