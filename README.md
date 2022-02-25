@@ -17,11 +17,12 @@ _Février / Mars 2022_
 
 Lors de nos sessions, nous aborderons les matières suivantes, de façon théorique et pratique.
 
-### PHP (4,5 jours)
+### PHP (5 jours)
 
 - Intro à PHP (PHP qu'est-ce que c'est, sites statiques vs dynamiques...)
 - Algorithmique (boucle, conditions...)
 - Les formulaires (get, post...)
+- Les sessions en PHP
 - Intéragir avec une base de données avec PDO (PHP Data Objects)
 - L'architecture MVC (Modèle vue contrôleur)
 
