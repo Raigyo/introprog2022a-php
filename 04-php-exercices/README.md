@@ -2,4 +2,4 @@
 
 ## Code: Exercices
 
-C'est ici que vous trouverez les énoncés des exercices. Puis lorsque vous les aurez réalisés, les corrigés.
+C'est ici que vous trouverez les énoncés des exercices.
