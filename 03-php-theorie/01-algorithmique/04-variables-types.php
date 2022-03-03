@@ -10,14 +10,14 @@
   // incrémentation de variable
   $age = $age + 1;
   // affichage
-  echo $name . " a " . $age . " ans";
-  echo "<br />";
+  // echo $name . " a " . $age . " ans";
+  // echo "<br />";
   // mélange de types
   // echo $name + $name; // non-numeric value
-  // echo $age + $age; // 94
+  // echo $age + $age2; // 94
   // echo $name + $age; // non-numeric value
   // echo 10 + $age2; // 20
 
-  // $newVar = 10 + "10";
-  // echo gettype($newVar);
+  $newVar = 10 + "10";
+  echo gettype($newVar);
 ?>

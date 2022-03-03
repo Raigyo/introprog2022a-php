@@ -7,8 +7,8 @@
   $firstName = "Frodon";
   $name = "Sacquet ";
   // affichage de variable
-  echo $name;
-  echo "<br />";
+  // echo $name;
+  // echo "<br />";
   // affichage de variable avec concaténation
   echo "Nom du personnage: " . $firstName . " ". $name;
 ?>
