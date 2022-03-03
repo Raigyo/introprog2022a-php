@@ -6,12 +6,12 @@
 
 Cortex a besoin de vous, car il est à court d'idées pour tenter de conquérir le monde!
 
-Mettez à profit vos talents de développeur pour réaliser un formulaire qui permettra aux génies démoniques de suggérer des idées à Cortex pour sa conquête du monde.
+Mettez à profit vos talents de développeur pour réaliser un formulaire qui permettra aux génies démoniaques de suggérer des idées à Cortex pour sa conquête du monde.
 
 Dans le formulaire, on devra:
 
 - mentionner son nom
-- donner son niveau démonique via un bouton radio (débutant, expérimenté, expert)
+- donner son niveau démoniaque via un bouton radio (débutant, expérimenté, expert)
 - suggérer ses idées
 
 Vous pouvez ajouter des champs si vous le souhaitez !
