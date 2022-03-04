@@ -91,6 +91,29 @@ Ajoutons deux petits challenges.
 
 ![Exemple du résultat](../../_readme_img/algo-character-list-v2.png)
 
+### Tip image:
+
+´´´php
+echo "<div class=\"gallery-img\"><img src=\"assets/img/" . $value["url-img"] . "\" alt=\"" . $value["nom"] . "\"></div>";
+´´´´
+
+´´´css
+img {
+height: 100%;
+width: 100%;
+padding-top: 10px;
+object-fit: cover;
+border-radius: 50%;
+}
+
+.gallery-img {
+display: block;
+width: 300px;
+height: 300px;
+margin: auto;
+}
+´´´
+
 ## Liens utiles
 
 ### PHP
