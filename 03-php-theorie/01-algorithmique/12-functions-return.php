@@ -8,10 +8,10 @@
     $a = 15;
     $b = 10;
     $c = 0;
-    return $a + $b;
-    // return $c = $a + $b;
+    // return $a + $b;
+    return $c = $a + $b;
   }
-  echo calculate();
+  // echo calculate();
 
   echo "<br />";
 

@@ -4,7 +4,7 @@
   // TYPE BOOLEAN
 
   // Type booléen (true or false)
-  $isHobbit = true;
+  $isHobbit = false;
 
   if ($isHobbit === true) {
     echo "Frodon est hobbit";

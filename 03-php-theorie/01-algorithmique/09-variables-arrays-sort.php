@@ -28,5 +28,5 @@
   // ksort($charactersAge);
   // arsort($charactersAge);
   // krsort($charactersAge);
-  // var_dump($charactersAge);
+  var_dump($charactersAge);
 ?>

@@ -21,12 +21,12 @@
     // On parcourt le tableau $charactersList
     foreach($charactersList as $key => $value){
       echo $key. "<br>";
-      if(is_array($value)){
+      // if(is_array($value)){
         // On parcourt les tableaux contenus dans $charactersList
-        foreach($value as $key => $value){
-              echo $key." : ".$value."<br>";
+        foreach($value as $key => $valueItem){
+              echo $key." : ".$valueItem."<br>";
         }
-      }
+      // }
       echo "<br>";
     }
   }

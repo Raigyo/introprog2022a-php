@@ -18,7 +18,7 @@
       echo "<br />";
     }
   }
-  counterFct ();
+  // counterFct ();
 
 
   // Lister le contenu d'un tableau
@@ -39,7 +39,7 @@
       echo "<br />";
     }
   }
-  fellowshipNames ();
+  // fellowshipNames ();
 
   /*
     Comme on commence à zéro - car un tableau commence à zéro, il faut utiliser <

@@ -16,8 +16,8 @@
     echo "<br />";
     echo "Liste des membres de la Communauté de l'anneau:";
     echo "<br />";
-    foreach($fellowshipMembers as $memberName){
-      echo "- " . $memberName;
+    foreach($fellowshipMembers as $item){
+      echo "- " . $item;
       echo "<br />";
     }
   }

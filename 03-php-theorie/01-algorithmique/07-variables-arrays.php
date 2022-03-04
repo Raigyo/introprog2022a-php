@@ -12,13 +12,13 @@
   $characters = array("Aragorn", "Legolas", "Gandalf"); // indexation automatique
   // echo implode(",", $characters); // lister le tableau au format string
   // echo count($characters); // compter le nombre d'items dans le tableau
-  echo "Hello " . $characters[0] . ", " . $characters[1] . " et " . $characters[2] . ".";
+  // echo "Hello " . $characters[0] . ", " . $characters[1] . " et " . $characters[2] . ".";
 
   $characters[3] = "Gimli"; // indexation manuelle
   // echo implode(",", $characters); // lister le tableau au format string
 
   $characterSpec = array("Frodon", 33, true);
-  echo "<br />";
-  echo implode(",", $characterSpec);
+  // echo "<br />";
+  echo implode("", $characterSpec);
 
 ?>
