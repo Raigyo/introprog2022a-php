@@ -94,10 +94,13 @@ Ajoutons deux petits challenges.
 ### Tip image:
 
 ´´´php
+
 echo "<div class=\"gallery-img\"><img src=\"assets/img/" . $value["url-img"] . "\" alt=\"" . $value["nom"] . "\"></div>";
+
 ´´´´
 
 ´´´css
+
 img {
 height: 100%;
 width: 100%;
@@ -112,6 +115,7 @@ width: 300px;
 height: 300px;
 margin: auto;
 }
+
 ´´´
 
 ## Liens utiles
