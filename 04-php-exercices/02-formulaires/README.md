@@ -20,6 +20,8 @@ N'hésitez pas à mettre en forme votre formuaire via CSS ou via Bootstrap !
 
 Contrainte : le formulaire doit être dans une page html, et l'envoi des données doit se faire dans une page en PHP !
 
+![Exemple du résultat](../../_readme_img/capture-form.png)
+
 ## Liens utiles
 
 - [Mise en forme des formulaires HTML](https://developer.mozilla.org/fr/docs/Learn/Forms/Styling_web_forms)
