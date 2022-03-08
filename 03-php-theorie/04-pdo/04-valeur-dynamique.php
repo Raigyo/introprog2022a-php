@@ -31,9 +31,9 @@
     // Requêtes: lister les Pokémons avec plus de 50Pv
 
     // exemple 1: donnés en dur
-    // $reqList = "SELECT * FROM pk_list where Pv > 50";
-    // $statementList = $dsn->prepare($reqList);
-    // $statementList->execute();
+    $reqList = "SELECT * FROM pk_list where Pv > 50";
+    $statementList = $dsn->prepare($reqList);
+    $statementList->execute();
 
     // exemple 2: avec variable (ne pas faire : permet les attaques par sql injection)
     // $pvValue = 50;
@@ -42,11 +42,11 @@
     // $statementList->execute();
 
     // exemple 3: avec PDOStatement::bindValue
-    $pvValue = 50;
-    $reqList = "SELECT * FROM pk_list where Pv > :value";
-    $statementList = $dsn->prepare($reqList);
-    $statementList->bindValue('value', $pvValue, PDO::PARAM_INT); // on protège la valeur
-    $statementList->execute();
+    // $pvValue = 50;
+    // $reqList = "SELECT * FROM pk_list where Pv > :value";
+    // $statementList = $dsn->prepare($reqList);
+    // $statementList->bindValue('value', $pvValue, PDO::PARAM_INT); // on protège la valeur
+    // $statementList->execute();
   }
 ?>
 

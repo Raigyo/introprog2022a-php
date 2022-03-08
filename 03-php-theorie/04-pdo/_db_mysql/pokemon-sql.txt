@@ -35,13 +35,13 @@ ALTER TABLE `pk_list` ADD FOREIGN KEY (`Type1`) REFERENCES `pk_types`(`Id`), ADD
 // Insérér un Pokémon
 
 ```mysql
-INSERT INTO `pk_list` (`Id`, `Name`, `Pv`, `Image`, `Type1`, `Type2`, `Editable`) VALUES (NULL, 'Pikachu', '35', 'pikachu.jpg', '5', NULL, '0');
+INSERT INTO `pk_list` (`Id`, `Name`, `Pv`, `Image`, `Type1`, `Type2`, `Editable`) VALUES (NULL, 'Pikachu', '35', 'pikachu.png', '5', NULL, '0');
 ```
 
 // Update d'un Pokémon, par exemple le nom de l'image de Pikachu
 
 ```mysql
-UPDATE `pk_list` SET `Image` = 'Pikachu.jpg' WHERE `pk_list`.`Id` = 3;
+UPDATE `pk_list` SET `Image` = 'Pikachu.png' WHERE `pk_list`.`Id` = 3;
 ```
 
 // Effacer un Pokémon (par exemple sur le nom)
@@ -61,31 +61,31 @@ DELETE FROM `pk_list`;
 
 ```mysql
 INSERT INTO `pk_list` (`Id`, `Name`, `Pv`, `Image`, `Type1`, `Type2`, `Editable`) VALUES
-(NULL, 'Bulbizarre', '45', 'Bulbizarre.jpg', '11', '12', '0'),
-(NULL, 'Herbizarre', '60', 'Herbizarre.jpg', '11', '12', '0'),
-(NULL, 'Florizarre', '80', 'Florizarre.jpg', '11', '12', '0'),
-(NULL, 'Salamèche', '39', 'Salamèche.jpg', '7', NULL, '0'),
-(NULL, 'Reptincel', '58', 'Reptincel.jpg', '7', NULL, '0'),
-(NULL, 'Dracaufeu', '78', 'Dracaufeu.jpg', '7', '18', '0'),
-(NULL, 'Carapuce', '44', 'Carapuce.jpg', '4', NULL, '0'),
-(NULL, 'Carabaffe', '59', 'Carabaffe.jpg', '4', NULL, '0'),
-(NULL, 'Tortank', '79', 'Tortank.jpg', '4', NULL, '0'),
-(NULL, 'Chenipan', '45', 'Chenipan.jpg', '9', NULL, '0'),
-(NULL, 'Chrysacier', '50', 'Chrysacier.jpg', '9', NULL, '0'),
-(NULL, 'Papilusion', '90', 'Papilusion.jpg', '9', '18', '0'),
-(NULL, 'Aspicot', '40', 'Aspicot.jpg', '9', '12', '0'),
-(NULL, 'Coconfort', '45', 'Coconfort.jpg', '9', '12', '0'),
-(NULL, 'Dardargnan', '65', 'Dardargnan.jpg', '9', '12', '0'),
-(NULL, 'Roucool', '40', 'Roucool.jpg', '10', '18', '0'),
-(NULL, 'Roucoups', '63', 'Roucoups.jpg', '10', '18', '0'),
-(NULL, 'Roucarnage', '83', 'Roucarnage.jpg', '10', '18', '0'),
-(NULL, 'Rattata', '30', 'Rattata.jpg', '10', NULL, '0'),
-(NULL, 'Rattatac', '55', 'Rattatac.jpg', '10', NULL, '0'),
-(NULL, 'Piafabec', '40', 'Piafabec.jpg', '10', '18', '0'),
-(NULL, 'Rapasdepic', '63', 'Rapasdepic.jpg', '10', '18', '0'),
-(NULL, 'Abo', '35', 'Abo.jpg', '12', NULL, '0'),
-(NULL, 'Arbok', '60', 'Arbok.jpg', '12', NULL, '0'),
-(NULL, 'Pikachu', '35', 'Pikachu.jpg', '5', NULL, '1');
+(NULL, 'Bulbizarre', '45', 'Bulbizarre.png', '11', '12', '0'),
+(NULL, 'Herbizarre', '60', 'Herbizarre.png', '11', '12', '0'),
+(NULL, 'Florizarre', '80', 'Florizarre.png', '11', '12', '0'),
+(NULL, 'Salamèche', '39', 'Salamèche.png', '7', NULL, '0'),
+(NULL, 'Reptincel', '58', 'Reptincel.png', '7', NULL, '0'),
+(NULL, 'Dracaufeu', '78', 'Dracaufeu.png', '7', '18', '0'),
+(NULL, 'Carapuce', '44', 'Carapuce.png', '4', NULL, '0'),
+(NULL, 'Carabaffe', '59', 'Carabaffe.png', '4', NULL, '0'),
+(NULL, 'Tortank', '79', 'Tortank.png', '4', NULL, '0'),
+(NULL, 'Chenipan', '45', 'Chenipan.png', '9', NULL, '0'),
+(NULL, 'Chrysacier', '50', 'Chrysacier.png', '9', NULL, '0'),
+(NULL, 'Papilusion', '90', 'Papilusion.png', '9', '18', '0'),
+(NULL, 'Aspicot', '40', 'Aspicot.png', '9', '12', '0'),
+(NULL, 'Coconfort', '45', 'Coconfort.png', '9', '12', '0'),
+(NULL, 'Dardargnan', '65', 'Dardargnan.png', '9', '12', '0'),
+(NULL, 'Roucool', '40', 'Roucool.png', '10', '18', '0'),
+(NULL, 'Roucoups', '63', 'Roucoups.png', '10', '18', '0'),
+(NULL, 'Roucarnage', '83', 'Roucarnage.png', '10', '18', '0'),
+(NULL, 'Rattata', '30', 'Rattata.png', '10', NULL, '0'),
+(NULL, 'Rattatac', '55', 'Rattatac.png', '10', NULL, '0'),
+(NULL, 'Piafabec', '40', 'Piafabec.png', '10', '18', '0'),
+(NULL, 'Rapasdepic', '63', 'Rapasdepic.png', '10', '18', '0'),
+(NULL, 'Abo', '35', 'Abo.png', '12', NULL, '0'),
+(NULL, 'Arbok', '60', 'Arbok.png', '12', NULL, '0'),
+(NULL, 'Pikachu', '35', 'Pikachu.png', '5', NULL, '1');
 ```
 
 ## Pokedex
