@@ -14,7 +14,7 @@
   define("PWD", "");
 
   try {
-    $connexion = "mysql:host=" . HOST_NAME . ";dbname=" . DB_NAME; 
+    $connexion = "mysql:host=" . HOST_NAME . ";dbname=" . DB_NAME;
     $dsn = new PDO($connexion, USER_NAME, PWD);
     // On ajoute des attributs de classe
     $dsn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // gestion des erreurs

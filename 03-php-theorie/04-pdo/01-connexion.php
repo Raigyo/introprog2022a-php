@@ -32,8 +32,8 @@
   */
 
   try {
-    $connexion = "mysql:host=" . HOST_NAME . ";dbname=" . DB_NAME; // pas d'espace ";dbname"
-    $dsn = new PDO($connexion, USER_NAME, PWD);
+    // $connexion = "mysql:host=" . HOST_NAME . ";dbname=" . DB_NAME; // pas d'espace ";dbname"
+    $dsn = new PDO("mysql:host=" . HOST_NAME . ";dbname=" . DB_NAME, USER_NAME, PWD);
     // On ajoute des attributs de classe
     $dsn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // gestion des erreurs
     $dsn->exec('set names utf8'); // gestion de l'UTF-8
