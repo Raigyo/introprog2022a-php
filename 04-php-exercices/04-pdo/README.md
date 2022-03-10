@@ -38,7 +38,7 @@ Vous avez à présent deux tables.
 - Une pour lister tous les personnages et leurs caractéristiques (ex: `getAllPokemons()`).
 - Une pour lister les différents types de Pokémons (ex: `getTypes()`).
 
-_Tip_: Dns chacune des fonctions, retournez un tableau avec les jeux de données (via un `return`)
+_Tip_: Dans chacune des fonctions, retournez un tableau avec les jeux de données (via un `return`)
 
 ## Récupérez les données
 
@@ -74,7 +74,7 @@ trim($value, '"');
 
 La soumission du formulaire se fait dans le try / catch ou vous lancez vos fonctions de récupération des Pokémons.
 
-### Delete
+### Effacer un Pokémon (Delete)
 
 Lorsqu'un Pokémon est éditable (par défaut, seul Pikachu est éditable). Ajoutez un bouton delete dans la colonne éditable.
 
@@ -97,3 +97,7 @@ INSERT INTO `pk_list` (`Id`, `Name`, `Pv`, `Image`, `Type1`, `Type2`, `Editable`
 ```
 
 ![Capture pokedex](../../_readme_img/03-capture-pdo.png)
+
+### Ajouter un Pokémon
+
+Avant le listage du tableau, ajoutez un champ pour ajouter un Pokémon. L'utilisateur pourra ajouter un nom, des PV (entre 1 et 50) et choisir un type dans un menu déroulant (`select`).
