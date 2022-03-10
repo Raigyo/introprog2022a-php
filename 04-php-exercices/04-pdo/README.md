@@ -109,6 +109,6 @@ Les autres valeurs seront par défaut.
 - Type 2: Null
 - Image: _Default.png_
 
-N'oublez pas de protéger vo valeurs dans la fonction avec la requête (et ici il y a une string).
+N'oublez pas de protéger vos valeurs dans la fonction avec la requête (et ici il y a une string).
 
 ![Capture pokedex](../../_readme_img/04-capture-pdo.png)
