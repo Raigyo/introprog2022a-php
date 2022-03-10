@@ -84,6 +84,7 @@ _Tip_:
 
 - Vous aurez besoin d'un champ caché lors de la soumission du formulaire afin de passer l'Id du Pokémon ([Théorie](https://github.com/Raigyo/introprog2022a-php/blob/main/03-php-theorie/02-formulaires/08-form-hidden.php))
 - N'oubliez pas de protéger vos valeurs (_bindValue_)
+- Dans le HTML qui se trouve dans un echo, si vous voulez utiliser une variable, au lieu de concaténer on peut utiliser les _template strings_ `value="{$value['Id']"}`
 - Pour recharger la page courrante après une opération:
 
 ```php
@@ -93,7 +94,7 @@ header('Location: '.$_SERVER['PHP_SELF']);
 Pour remettre Pikachu via le SQL de PHPMyAdmin:
 
 ```sql
-INSERT INTO `pk_list` (`Id`, `Name`, `Pv`, `Image`, `Type1`, `Type2`, `Editable`) VALUES (NULL, 'Pikachu', '35', 'Pikachu.png', '5', NULL, '1');
+INSERT INTO pk_list VALUES (NULL, 'Pikachu', '35', 'Pikachu.png', '5', NULL, '1');
 ```
 
 ![Capture pokedex](../../_readme_img/03-capture-pdo.png)
@@ -101,3 +102,13 @@ INSERT INTO `pk_list` (`Id`, `Name`, `Pv`, `Image`, `Type1`, `Type2`, `Editable`
 ### Ajouter un Pokémon
 
 Avant le listage du tableau, ajoutez un champ pour ajouter un Pokémon. L'utilisateur pourra ajouter un nom, des PV (entre 1 et 50) et choisir un type dans un menu déroulant (`select`).
+
+Les autres valeurs seront par défaut.
+
+- ID auto
+- Type 2: Null
+- Image: _Default.png_
+
+N'oublez pas de protéger vo valeurs dans la fonction avec la requête (et ici il y a une string).
+
+![Capture pokedex](../../_readme_img/04-capture-pdo.png)
