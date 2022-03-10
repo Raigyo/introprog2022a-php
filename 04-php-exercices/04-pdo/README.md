@@ -27,21 +27,73 @@ Vous avez à présent deux tables.
 
 ![Capture phpmyadmin](../../_readme_img/03-php-myadmin.png)
 
-## Exercice partie 1
+## Exercice partie 1: affichage des données
 
 ### Connexion à la base de données
 
-- Comme vu dans la théorie créez dans un try/catch la connexion à la DB.
+- Comme vu dans la théorie créez dans un try/catch la connexion à la DB. Après avoir confirmé que la connexion se faisait bien, mettez-là dans une fonction afin de pouvoir faire la connexion à la DB lorsque vous en aurez besoin dans l'application. Par exemple `function connectDB()`.
 
 ### Créez 2 fonctions avec des requêtes SQL
 
-- Une pour lister tous les personnages et leurs caractéristiques
-- Une pour lister les différents types de Pokémons.
+- Une pour lister tous les personnages et leurs caractéristiques (ex: `getAllPokemons()`).
+- Une pour lister les différents types de Pokémons (ex: `getTypes()`).
+
+_Tip_: Dns chacune des fonctions, retournez un tableau avec les jeux de données (via un `return`)
+
+## Récupérez les données
+
+Dans un try / catch, lancez vos fonctions pour récupérer les jeux de données, en vous étant connecté à la DB via la fonction créée dans la première étape.
 
 ### Affichez les Pokémons dans des tables HTML
 
-- Afficher la liste des Pokémons dans une table HTML
+Afficher la liste des Pokémons dans une table HTML.
 
 ![Capture phpmyadmin](../../_readme_img/01-capture-pdo.png)
 
-### A Suivre ...
+### Affichez les types
+
+Créez une fonction qui va afficher les types de Pokémons au lieu de leur clé. Cette fonction pourra être appellée au niveau de la création du tableau.
+
+_Tip_:
+
+- Pour convertir un élement de tableau vers un string:
+
+```php
+json_encode($value["myValue"]);
+```
+
+- Pour enlever les guillemets qui sont retournés dans la string:
+
+```php
+trim($value, '"');
+```
+
+![Capture pokedex](../../_readme_img/02-capture-pdo.png)
+
+## Exercice partie 2: édition des données
+
+La soumission du formulaire se fait dans le try / catch ou vous lancez vos fonctions de récupération des Pokémons.
+
+### Delete
+
+Lorsqu'un Pokémon est éditable (par défaut, seul Pikachu est éditable). Ajoutez un bouton delete dans la colonne éditable.
+
+Ajoutez dans votre code la prise en charge de la soumission du formulaire ainsi qu'une fonction qui va effacer le Pokémon.
+
+_Tip_:
+
+- Vous aurez besoin d'un champ caché lors de la soumission du formulaire afin de passer l'Id du Pokémon ([Théorie](https://github.com/Raigyo/introprog2022a-php/blob/main/03-php-theorie/02-formulaires/08-form-hidden.php))
+- N'oubliez pas de protéger vos valeurs (_bindValue_)
+- Pour recharger la page courrante après une opération:
+
+```php
+header('Location: '.$_SERVER['PHP_SELF']);
+```
+
+Pour remettre Pikachu via le SQL de PHPMyAdmin:
+
+```sql
+INSERT INTO `pk_list` (`Id`, `Name`, `Pv`, `Image`, `Type1`, `Type2`, `Editable`) VALUES (NULL, 'Pikachu', '35', 'Pikachu.png', '5', NULL, '1');
+```
+
+![Capture pokedex](../../_readme_img/03-capture-pdo.png)
