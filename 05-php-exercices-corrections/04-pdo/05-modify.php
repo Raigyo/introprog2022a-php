@@ -91,7 +91,9 @@
   function displayType($typesList, $id) {
     foreach($typesList as $key => $value) {
       if ($id-1 === $key){
-        $value = json_encode($value["Type"]);
+        // Transforme la valeur du tableau en string, évite les problèmes d'accents
+        $value = json_encode($value["Type"], JSON_UNESCAPED_UNICODE);
+        // Enlève les guillemets de la string (methode string)
         return trim($value, '"');
       }
     }
@@ -145,7 +147,7 @@
   <select name="type" required>
     <?php
         foreach($typesList as $key => $value) {
-          $value = trim(json_encode($value["Type"]), '"');
+          $value = trim(json_encode($value["Type"], JSON_UNESCAPED_UNICODE), '"');
           echo "<option value=\"$key\">$value</option>";
         }
     ?>
