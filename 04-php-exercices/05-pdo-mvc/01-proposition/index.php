@@ -7,7 +7,7 @@
 <h1>Pokédex</h1>
 
 
-  
+
 
 <?php
   include("./templates/common/footer.php");
