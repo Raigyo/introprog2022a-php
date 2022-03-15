@@ -54,7 +54,7 @@ Exemple : Larry Wachowski change d'identité pour Lana Wachowski... On change un
 
 La DB et les assets (images, css...) sont offerts par la maison, le _Le Dernier Restaurant avant la fin du monde_...
 
-A vous de créer une DB via PHPMyAdmin et d'y importer le fichiers SQL présent dans \__db_mysql_.
+On va créer une DB via PHPMyAdmin et d'y importer le fichiers SQL présent dans \__db_mysql_.
 
 Pourquoi pas _introprog2022a-labo_?
 
