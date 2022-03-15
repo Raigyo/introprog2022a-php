@@ -12,6 +12,17 @@ Et créer son Pokédex ! (bon, on se contentera des 25 premiers Pokémons de la 
 
 Connectez-vous à PHPMyAdmin [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
 
+Connectez-vous à PHPMyAdmin [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
+
+- Admin: root
+- PW: vide
+
+Attention, nous garderons ces valeurs par défaut pour les exercices, mais pour des applications "pro", veuillez sécurisez vos accès !
+
+Pour le type de DB, choisissez Maria DB.
+
+Sur Mac, il n'est pas possible d'utiliser Maria DB avec MAMP, il faudra utiliser XAMPP.
+
 Créez la base de données _db_introprog_pokemons_
 
 ![Capture phpmyadmin](../../_readme_img/01-php-myadmin.png)
