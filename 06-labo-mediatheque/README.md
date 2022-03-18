@@ -95,6 +95,10 @@ Il est probable que vous n'arriviez pas au bout, ce n'est pas grave, vous aurez 
 
 Ajouter une select box (ou autre à vous de voir niveau design) qui permettra de sélectionner un genre et de n'afficher que les films concernant ce genre...
 
+Ce filtre doit fonctionner via SQL et pas par un tableau.
+
+Vous pouvez aussi ajouer d'autres filtres, par réalisateur, acteur, date...
+
 ## 2a. Ajouter un film (programmation procédurale)
 
 Donner la possibilité d'ajouter un film avec toutes les données associées. On l'avait déjà fait avec le Pokédex. C'est l'occasion de voir si vous pourrez le refaire.
