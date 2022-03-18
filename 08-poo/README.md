@@ -1,5 +1,7 @@
 # Introprog 2022a : Programmation orientée objet (POO / OOP)
 
+[oop](../_readme_img/01-poo.png)
+
 La programmation orientée objet est un modèle de langage de programmation qui s'articule autour d'objets et de données, plutôt que d'actions et de logique. Contrairement à la programmation procédurale qui récupére des données en entrée, les traite puis produit des données en sortie.
 
 ## Notions fondamentales
