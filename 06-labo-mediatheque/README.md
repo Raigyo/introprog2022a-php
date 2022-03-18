@@ -78,3 +78,54 @@ N'hésitez pas à me le faire savoir...
 Il y a moyen de rajouter du challenge...
 
 ![dbz](../_readme_img/dbz.gif)
+
+---
+
+# Challenge accepted
+
+Si vous êtes arrivé jusqu'ici, le labo est réussi félicitations !
+
+Pour les améliorations, je vous suggère de travailler chacun de votre côté (même si vous pouvez toujours faire du pair coding ou partager des infos).
+
+Ces améliorations ne doivent pas nécessairement être faites dans l'ordre...
+
+Il est probable que vous n'arriviez pas au bout, ce n'est pas grave, vous aurez ainsi des challenges à effectuer après la formation.
+
+## 1. Filtre par genre
+
+Ajouter une select box (ou autre à vous de voir niveau design) qui permettra de sélectionner un genre et de n'afficher que les films concernant ce genre...
+
+## 2a. Ajouter un film (programmation procédurale)
+
+Donner la possibilité d'ajouter un film avec toutes les données associées. On l'avait déjà fait avec le Pokédex. C'est l'occasion de voir si vous pourrez le refaire.
+
+Par contre le formulaire devra se trouver dans une autre page accessible depuis un menu ou un bouton "Ajouter un film".
+
+## 2b Ajouter un film (programmation orientée objet)
+
+Challenge: la même chose, mais en utilisant une classe et un constructeur...
+
+[Théorie: 08-poo](../08-poo)
+
+## 3. Connexion utilisateur
+
+Pour cela vous devrez créer une nouvelle table _users_.
+
+Avec un champ pour le nom d'utilisateur, un pour l'adresse email, un pour le password et un pour le rôle.
+
+Les rôles seront dans une autre table et contiendront une liste de rôles: user, editor et admin.
+
+Dans l'application il faudra un input avec incription / login.
+
+Lorsqu'un utilisateur est inscrit il pourra se loguer au site.
+Une fois logué le bouton devra changer pour logout.
+
+Prévoyer que cette partie (login/logout) doit pouvoir apparaître sur toutes les pages du site (par exemple la page d'ajout de films). Et que la connexion au site doit rester tout le temps valide d'une page à l'autre.
+
+Ajouter une page dans le site et accessible depuis un menu ou un bouton: "Ajouter un film". (si ça n'a pas été fait dans le challenge)
+
+Vous devrez utiliser une variable de session utilisateur et elle devra rester active sur tout le site.
+
+Dernière chose, le bouton/menu "Ajouter un film" ne sera pas visible depuis la homepage si l'utilisateur n'est pas connecté et n'est pas editor ou admin.
+
+Egalement si quelqu'un essaye de se connecter d'une façon ou d'une autre à la page "Ajouter un film" sans être editor ou admin, la page doit afficher à l'utilisateur qu'il n'a pas les droits nécessaires pour accéder à la page.
