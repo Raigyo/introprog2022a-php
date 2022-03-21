@@ -1,24 +1,25 @@
+/* Type de police et couleur */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
   font-family: "Roboto", sans-serif;
   color: #3d3d3d;
-  margin: 0;
+}
+
+.general{
+  overflow: auto;
 }
 div#main {
   width: 700px;
-  margin: 50px auto 20px auto;
-  /*border: 1px solid red;*/
+  margin: 100px auto 260px auto;
 }
 div.film {
-  /*border: 1px solid green;*/
   margin-bottom: 20px;
   padding: 20px;
 }
-
-div.film.bleu {
+div.film.bleu:nth-child(odd){
   box-shadow: 2px 4px 5px #5e8eb3;
 }
-div.film.rouge {
+div.film.bleu:nth-child(even) {
   box-shadow: 2px 4px 5px #faa18d;
 }
 div.annee {
@@ -31,13 +32,11 @@ h2.titre {
   width: 90%;
 }
 div.image {
-  /*border: 1px solid pink;*/
   width: 25%;
   display: inline-block;
   vertical-align: top;
 }
 div.contenu {
-  /*border: 1px solid blue;*/
   width: 70%;
   display: inline-block;
   vertical-align: top;
@@ -68,26 +67,156 @@ a.previous {
 a.next {
   text-align: right;
 }
-/****** RECHERCHER ******/
-header {
-  /*background-color: #0061A7;*/
-  padding: 20px;
-  box-shadow: 0px 3px 5px #848484;
-  background: no-repeat 15% 60% / 310px #14497d url("../icons/film-strip.jpg");
+.navigation {
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  position: fixed;
+  top: 90%; left:35%; right: 35%;
 }
-input[type="image"] {
-  width: 16px;
-  vertical-align: bottom;
-  position: relative;
-  left: -27px;
-  margin-bottom: 5px;
+
+.page-link:link, .page-link:visited {
+	color: rgb(248, 244, 244);
+  background-color: #1b1610;
 }
-form {
-  width: 200px;
-  margin: 20px auto;
+.page-link:hover{
+	color: rgb(248, 244, 244);
+  background-color: #1b1610;
 }
-input.search {
-  width: 170px;
-  height: 20px;
-  border-radius: 5px;
+.page-link:active{
+	color: rgb(248, 244, 244);
+  background-color: #1b1610;
 }
+.page-link{
+  color: rgb(246, 246, 250);
+  background-color: #f6f7ef;
+}
+.pagination{
+  background-color: #faa18d;
+  z-index: 5;
+}
+.navigation2{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  position: fixed;
+  z-index: 5;
+ 
+}
+.recherche{
+  display: flex;
+  position: fixed;
+  bottom: 95.5%; left: 35%; right: 35%;
+  justify-content: center;
+  z-index: 4;
+}
+.champ{
+  margin: 0;
+  float: center;  
+}
+.fondEcran{
+  z-index: 4;
+  max-width: 100%;
+  position: fixed;
+  height: 100%;
+  min-width: 100%;
+
+}
+.taille {
+  max-width: 250px;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  height: 80%;
+ 
+} 
+
+.bouton {
+  width: 20%;
+  padding: 0px;
+  margin:0;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+  background: white;
+  border: none;
+
+ } 
+ 
+ .cadre{
+  border: none;
+  height: 30px;
+}
+ .img{
+  max-width: 25px;
+  max-height: 25px;
+} 
+.border-dark{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.page-item.active .page-link {
+  background-color: darkred;
+  border-color: darkred;
+}
+.colourt {
+  background-color: transparent;
+  color:gray;
+}
+@media screen and (max-width: 1100px) {
+
+div.film.bleu {
+  box-shadow: 2px 4px 5px #5e8eb3;
+  max-width: 500px;
+  
+}
+div.contenu h2{
+  font-size: 1.5rem;
+}
+div.contenu {
+  font-size: 0.68rem;
+  padding-left: 5%;
+}
+div.contenu h3 {
+  font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 800px) {
+
+div.film.bleu {
+  box-shadow: 2px 4px 5px #5e8eb3;
+  max-width: 400px;
+}
+div.contenu h2{
+  font-size: 1rem;
+}
+div.contenu {
+  font-size: 0.58rem;
+  padding-left: 15%;
+}
+div.contenu h3 {
+  font-size: 1rem;
+}
+div.recherche input{
+  max-width: 150px;
+}
+}
+@media screen and (max-width: 600px) {
+
+  div.film.bleu {
+    box-shadow: 2px 4px 5px #5e8eb3;
+    max-width: 270px;
+  }
+  div.contenu h2{
+    font-size: 0.8rem;
+  }
+  div.contenu {
+    font-size: 0.58rem;
+    padding-left: 35%;
+  }
+  div.contenu h3 {
+    font-size: 0.8rem;
+  }
+  div.recherche input{
+    max-width: 100px;
+  }
+  }
