@@ -47,7 +47,7 @@
 <h2> Personnages : </h2>
 <?php
   echo "<div class='card-content-all'>";
-  $ch1 = new Character("Elf", "elfe.jpg", 512, false, 5, 4); // nouvelle instance de classe
+  $ch1 = new Character("Elf", "elfe.jpg", 512, false, 5, 6); // nouvelle instance de classe
   $ch1->templateDisplay ();
   $ch2 = new Character("Mage", "mage.jpg", 75, true, 3, 7); // nouvelle instance de classe
   $ch2->templateDisplay ();
